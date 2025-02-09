@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('C:\\Users\\vst04\\Desktop\\comming soon\\@dailyPCwallps (5).jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      position: relative;
+      min-height: 100vh;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .logo {
+      position: fixed;
+      top: 0; /* Moves the logo to the very top */
+      left: max(10px, 0vw);
+      z-index: 3;
+      width: clamp(150px, 20vw, 250px); /* Increased size */
+      height: auto;
+      border-radius: 8px;
+      padding: 5px; /* Optional: Adds a small gap from the edge */
+    }
+
+
+    .content {
+      position: relative;
+      z-index: 2;
+      top: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: clamp(10px, 3vw, 20px);
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 8vw, 5rem);
+      margin-bottom: clamp(0.5rem, 2vh, 1rem);
+      text-transform: uppercase;
+      letter-spacing: clamp(4px, 1.5vw, 12px);
+      white-space: nowrap;
+      background: linear-gradient(
+        300deg,
+        #ff6b6b,
+        #4ecdc4,
+        #45b7d1,
+        #a06cd5,
+        #ff6b6b
+      );
+      background-size: 300% 300%;
+      animation: gradient 5s ease infinite;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    }
+
+    .festival-text {
+      width: min(800px, 95%);
+      margin: 0 auto;
+      color: #fff;
+      padding: clamp(10px, 3vw, 20px);
+    }
+
+    .main-title {
+      font-size: clamp(1rem, 4vw, 1.8rem);
+      margin-bottom: clamp(1rem, 3vh, 2rem);
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      line-height: 1.4;
+    }
+
+    .description {
+      font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+      margin-bottom: clamp(1rem, 2vh, 1.5rem);
+      line-height: 1.6;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Landscape mode optimizations */
+    @media (orientation: landscape) and (max-height: 600px) {
+      .content {
+        padding-top: 80px;
+      }
+
+      h1 {
+        font-size: clamp(1.5rem, 6vw, 3rem);
+      }
+
+      .main-title {
+        font-size: clamp(0.9rem, 3vw, 1.4rem);
+        margin-bottom: 1rem;
+      }
+
+      .description {
+        font-size: clamp(0.8rem, 2vw, 1rem);
+        line-height: 1.4;
+      }
+    }
+
+    /* Ultra-small screens */
+    @media (max-width: 320px) {
+      .logo {
+        width: clamp(100px, 20vw, 180px);
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+      }
+
+      .main-title {
+        font-size: 0.9rem;
+      }
+
+      .description {
+        font-size: 0.8rem;
+        line-height: 1.3;
+      }
+    }
+
+    @supports (-webkit-touch-callout: none) {
+      .content {
+        min-height: -webkit-fill-available;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="C:\\Users\\vst04\\Desktop\\comming soon\\saintgits logo.png" alt="Logo" class="logo">
+  <div class="content">
+    <h1>Coming Soon</h1>
+    <div class="festival-text">
+      <p class="main-title">
+        🎨✨Welcome to Pratitya 2025 – Festa Fantasia!✨🎨
+      </p>
+      <p class="description">
+        A global symphony of joy, where festivals unite, traditions shine, and cultures blend into a vivid tapestry of life. From the embers of the past, a vibrant fantasia of color, sound, and harmony rises. Each beat celebrates heritage, every step embodies unity, and every story lights up the soul.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
