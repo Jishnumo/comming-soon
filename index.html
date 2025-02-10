@@ -144,31 +144,7 @@
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
 
-    @media (orientation: landscape) and (max-height: 600px) {
-      .content {
-        padding-top: 80px;
-      }
-
-      h1 {
-        font-size: clamp(1.5rem, 6vw, 3rem);
-      }
-
-      .main-title {
-        font-size: clamp(0.9rem, 3vw, 1.4rem);
-        margin-bottom: 1rem;
-      }
-
-      .description {
-        font-size: clamp(0.8rem, 2vw, 1rem);
-        line-height: 1.4;
-      }
-    }
-
     @media (max-width: 320px) {
-      .logo {
-        width: clamp(100px, 20vw, 180px);
-      }
-
       h1 {
         font-size: 1.8rem;
         letter-spacing: 2px;
@@ -183,17 +159,11 @@
         line-height: 1.3;
       }
     }
-
-    @supports (-webkit-touch-callout: none) {
-      .content {
-        min-height: -webkit-fill-available;
-      }
-    }
   </style>
 </head>
 <body>
   <picture>
-    <source media="(max-width: 600px)" srcset="saintgits-logo-small.png">
+    <source media="(max-width: 600px)" srcset="saintgits-mobile-logo.png">
     <img src="saintgits-logo.png" alt="Saintgits College of Engineering Logo" class="logo">
   </picture>
   <div class="content">
